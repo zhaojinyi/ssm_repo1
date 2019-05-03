@@ -1,0 +1,2 @@
+maven01使用ssm框架展示页面
+maven02+parent使用了父子工程展示页面
