@@ -1,0 +1,14 @@
+server:
+  port: 8901
+spring:
+  application:
+    name: consumerorder-feign-hystrix
+user:
+  url: http://localhost:7900/user/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:812912@localhost:10000/eureka
+feign:
+  hystrix:
+   enabled: true

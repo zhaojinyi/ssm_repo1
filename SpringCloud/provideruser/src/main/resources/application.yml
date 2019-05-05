@@ -1,0 +1,9 @@
+server:
+  port: 7903   #程序启动后的端口，也就是tomcat的端口，我们可以自己定义
+spring:
+  application:
+    name: provider-user1 #服务的别名
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:812912@peer1:8761/eureka

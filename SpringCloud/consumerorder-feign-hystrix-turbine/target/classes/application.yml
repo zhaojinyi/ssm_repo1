@@ -1,0 +1,18 @@
+server:
+  port: 8901
+  context-path: /feignhystrix   # 项目的访问路径
+spring:
+  application:
+    name: consumerorder-feign-hystrix-turbine
+user:
+  url: http://localhost:7900/user/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:812912@localhost:10000/eureka
+  instance:
+    prefer-ip-address: true
+    home-page-url-path: /feignhystrix  # 示例的 home 地址多一块， 如果我们是通过nginx等方向代理的方式访问这个项目，而且反向代理的地址与当前的项目不一致， 则需要url
+feign:
+  hystrix:
+   enabled: true
