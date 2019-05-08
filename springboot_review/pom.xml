@@ -13,6 +13,7 @@
         <module>springboot_web</module>
         <module>springboot_view</module>
         <module>springboot_view_thymeleaf</module>
+        <module>springboot_springMVC_MyBatis</module>
     </modules>
 
     <name>springboot_review</name>
