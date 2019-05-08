@@ -12,6 +12,7 @@
         <module>springboot_hello</module>
         <module>springboot_web</module>
         <module>springboot_view</module>
+        <module>springboot_view_thymeleaf</module>
     </modules>
 
     <name>springboot_review</name>
