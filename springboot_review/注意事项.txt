@@ -1,0 +1,21 @@
+springboot_springMVC_MyBatis   整合时需要注意在配置文件  application.properties  使用  Mybatis的注解   扫描  mapper.xml
+
+
+springboot_validate  数据校验常用注解
+/**
+     * @NotBlank   判断字符串是否为null或者是空串
+     * @NotEmpty   判断字符串是否null或者是空串
+     * @Length     判断字符串的长度（最大或最小）
+     * @Min        判断数值最小值
+     * @Max        判断数值最大值
+     * @Email      判断邮箱是否合法
+     */
+
+    /**java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'users' available as request attribute
+     *
+     * 解决异常的方式:
+     *  可以再页面跳转的方法中注入一个users对象，
+     *  注意：  由于springMVC会将该对象放入到MOdel 中传递，key的名称回事呀该对象的驼峰式的命名规则来作为key
+     *  参数的变量名需要与对象的名称相同，，将首字母小写
+     * @return
+     */
