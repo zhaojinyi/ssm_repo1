@@ -14,6 +14,7 @@
         <module>springboot_view</module>
         <module>springboot_view_thymeleaf</module>
         <module>springboot_springMVC_MyBatis</module>
+        <module>springboot_validate</module>
     </modules>
 
     <name>springboot_review</name>
