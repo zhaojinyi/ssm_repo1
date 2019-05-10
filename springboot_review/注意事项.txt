@@ -35,6 +35,30 @@ springboot的test测试类
     需要加载Junit包版本不低于4.12
 
 
+springboot的热部署  devtools
+    加载的包不要太高
+	需要加上scope
+	<dependency>
+            	     <groupId>org.springframework.boot</groupId>
+            	     <artifactId>spring-boot-devtools</artifactId>
+                     <version>1.5.7.RELEASE</version>
+            	     <optional>true</optional>
+                     <scope>runtime</scope>
+        	</dependency>
+<build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                    <addResources>true</addResources>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+spring的devtools工具根据springboot的版本不同需要修改其版本，个人建议： 永不使用这傻逼玩意
+
 
 
 
