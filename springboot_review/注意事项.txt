@@ -60,6 +60,13 @@ springboot的热部署  devtools
 spring的devtools工具根据springboot的版本不同需要修改其版本，个人建议： 永不使用这傻逼玩意
 
 
+springboot的缓存Ehcache
+   注意启动类上要开启@EnableCaching
+     	@CacheEvict(value = "users", allEntries = true)   清除缓存中以users缓存策略缓存的对象
+		Key 属性：给存储的值起个名称。在查询时如果有名称相同的，那么则知己从缓存中将 数据返回
+	@Cacheable(value="users",key="#pageable.pageSize")
+	@Cacheable(value = "users")   对当前方法做缓存处理
+
 
 
 

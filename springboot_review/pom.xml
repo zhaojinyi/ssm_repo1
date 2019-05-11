@@ -19,6 +19,7 @@
         <module>springboot_test</module>
         <module>springboot_test</module>
         <module>springboot_springloader</module>
+        <module>springboot_ehcache</module>
     </modules>
 
     <name>springboot_review</name>
