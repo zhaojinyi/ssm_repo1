@@ -21,6 +21,8 @@
         <module>springboot_springloader</module>
         <module>springboot_ehcache</module>
         <module>springboot_springdataRedis</module>
+        <module>springboot_scheduled</module>
+        <module>springboot_quartz</module>
     </modules>
 
     <name>springboot_review</name>
